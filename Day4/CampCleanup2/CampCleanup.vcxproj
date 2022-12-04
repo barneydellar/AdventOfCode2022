@@ -134,14 +134,14 @@
     <ClCompile Include="CampCleanup.cpp" />
     <ClCompile Include="FileReader.cpp" />
     <ClCompile Include="LineSplitter.cpp" />
-    <ClCompile Include="RangesContain.cpp" />
+    <ClCompile Include="RangesOverlap.cpp" />
     <ClCompile Include="StringSplitter.cpp" />
     <ClCompile Include="Range.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="FileReader.h" />
     <ClInclude Include="LineSplitter.h" />
-    <ClInclude Include="RangesContain.h" />
+    <ClInclude Include="RangesOverlap.h" />
     <ClInclude Include="StringSplitter.h" />
     <ClInclude Include="Range.h" />
   </ItemGroup>
