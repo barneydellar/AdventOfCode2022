@@ -1,1 +1,0 @@
-C:\Projects\AdventOfCode\Day4\CampCleanup\x64\Debug\CampCleanup.exe
