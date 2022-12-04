@@ -7,7 +7,7 @@
 #include "FileReader.h"
 #include "LineSplitter.h"
 #include "Range.h"
-#include "RangesContain.h"
+#include "RangesOverlap.h"
 
 int main()
 {
@@ -26,8 +26,8 @@ int main()
         ranges, 
         [](auto p)
         {
-            return RangesContain::Contains(p);
+            return RangesOverlap::Overlap(p);
         });
 
-    std::cout << "There were " << contained << " contained pairs";
+    std::cout << "There were " << contained << " overlapping pairs";
 }

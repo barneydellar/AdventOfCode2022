@@ -22,7 +22,15 @@ int Range::Max() const
     return max;
 }
 
-bool Range::Contains(const Range& other) const
+bool Range::Overlaps(const Range& other) const
 {
-    return other.Min() >= Min() && other.Max() <= Max();
+    if (other.Max() < Min())
+    {
+        return false;
+    }
+    if (other.Min() > Max())
+    {
+        return false;
+    }
+    return true;
 }

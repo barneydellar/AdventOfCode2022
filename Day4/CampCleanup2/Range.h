@@ -8,7 +8,7 @@ public:
     int Min() const;
     int Max() const;
 
-    bool Contains(const Range& other) const;
+    bool Overlaps(const Range& other) const;
 
 private:
     int min;
