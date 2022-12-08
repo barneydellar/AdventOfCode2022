@@ -4,37 +4,8 @@
     <projectFile>Day5/Day5.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1f7899dc-add5-4696-9fcf-274799bfcf86" name="Changes" comment="Can parse the stacks!">
-      <change beforePath="$PROJECT_DIR$/Day5/bin/Debug/net6.0/Day5.deps.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day5/bin/Debug/net6.0/Day5.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day5/bin/Debug/net6.0/Day5.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day5/bin/Debug/net6.0/Day5.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day5/bin/Debug/net6.0/Day5.runtimeconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day5/bin/Debug/net6.0/Library.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day5/bin/Debug/net6.0/Library.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day5/obj/Day5.csproj.nuget.dgspec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day5/obj/Day5.csproj.nuget.g.props" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day5/obj/Day5.csproj.nuget.g.targets" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day5/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day5/obj/Debug/net6.0/Day5.AssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day5/obj/Debug/net6.0/Day5.AssemblyInfoInputs.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day5/obj/Debug/net6.0/Day5.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day5/obj/Debug/net6.0/Day5.GlobalUsings.g.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day5/obj/Debug/net6.0/Day5.assets.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day5/obj/Debug/net6.0/Day5.csproj.AssemblyReference.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day5/obj/Debug/net6.0/Day5.csproj.CopyComplete" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day5/obj/Debug/net6.0/Day5.csproj.CoreCompileInputs.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day5/obj/Debug/net6.0/Day5.csproj.FileListAbsolute.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day5/obj/Debug/net6.0/Day5.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day5/obj/Debug/net6.0/Day5.genruntimeconfig.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day5/obj/Debug/net6.0/Day5.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day5/obj/Debug/net6.0/apphost.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day5/obj/Debug/net6.0/ref/Day5.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day5/obj/Debug/net6.0/refint/Day5.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day5/obj/project.assets.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day5/obj/project.nuget.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day5/obj/project.packagespec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Day5/obj/rider.project.restore.info" beforeDir="false" />
+    <list default="true" id="1f7899dc-add5-4696-9fcf-274799bfcf86" name="Changes" comment="Removing cruft">
+      <change beforePath="$PROJECT_DIR$/../../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +13,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock://C:/Projects/AdventOfCode/Day5/Day5/Day5/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/198a6261cebc324728dcc4c178edc5f2894123f711722c80e8557cbfd27651/ThrowHelper.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/9d2375a1174679b785611e66f8ab7a23ab251ad4136e13cfd71f59feb1bfa/NumericAssertions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/c625622e213fe87ffe77796b96b18d65375f6ae9ca9caae6940d27142bc625f/LateBoundTestFramework.cs" root0="SKIP_HIGHLIGHTING" />
@@ -99,7 +71,7 @@
       <option name="presentableId" value="Default" />
       <updated>1670429821634</updated>
       <workItem from="1670429826705" duration="4736000" />
-      <workItem from="1670487274214" duration="331000" />
+      <workItem from="1670487274214" duration="633000" />
     </task>
     <task id="LOCAL-00001" summary="Can parse the stacks!">
       <created>1670487410571</created>
@@ -108,7 +80,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670487410571</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Removing cruft">
+      <created>1670487686915</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1670487686915</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,6 +108,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Can parse the stacks!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Can parse the stacks!" />
+    <MESSAGE value="Removing cruft" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removing cruft" />
   </component>
 </project>
