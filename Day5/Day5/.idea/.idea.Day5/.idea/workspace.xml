@@ -4,8 +4,15 @@
     <projectFile>Day5/Day5.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1f7899dc-add5-4696-9fcf-274799bfcf86" name="Changes" comment="Removing cruft">
-      <change beforePath="$PROJECT_DIR$/../../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../.gitignore" afterDir="false" />
+    <list default="true" id="1f7899dc-add5-4696-9fcf-274799bfcf86" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Day5/FileReader.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/GiantCargoCrane.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/Movement.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Library/MovementFactory.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/GiantCargoCraneTest.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/MovementFactoryTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Day5/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Day5/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day5/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Day5/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,8 +20,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Projects/AdventOfCode/Day5/Day5/Day5/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/198a6261cebc324728dcc4c178edc5f2894123f711722c80e8557cbfd27651/ThrowHelper.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/7a1ad32abaee44480b66c2c1fcee9628cca92a4cd272eced5781564201180/Number.Parsing.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/9d2375a1174679b785611e66f8ab7a23ab251ad4136e13cfd71f59feb1bfa/NumericAssertions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/c625622e213fe87ffe77796b96b18d65375f6ae9ca9caae6940d27142bc625f/LateBoundTestFramework.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/e7e231682be8652744726acc6de35323daa68061429db55e0c251114902f60/String.Manipulation.cs" root0="SKIP_HIGHLIGHTING" />
@@ -71,7 +81,7 @@
       <option name="presentableId" value="Default" />
       <updated>1670429821634</updated>
       <workItem from="1670429826705" duration="4736000" />
-      <workItem from="1670487274214" duration="633000" />
+      <workItem from="1670487274214" duration="7384000" />
     </task>
     <task id="LOCAL-00001" summary="Can parse the stacks!">
       <created>1670487410571</created>
@@ -87,7 +97,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670487686915</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Tidying">
+      <created>1670487923760</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1670487923760</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -109,6 +126,26 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Can parse the stacks!" />
     <MESSAGE value="Removing cruft" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removing cruft" />
+    <MESSAGE value="Tidying" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tidying" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Tests/GiantCargoCraneTest.cs</url>
+          <line>93</line>
+          <properties documentPath="C:\Projects\AdventOfCode\Day5\Day5\Tests\GiantCargoCraneTest.cs" initialLine="93" containingFunctionPresentation="method 'MovesWithMultipleAmountsHaveAnEffect'">
+            <startOffsets>
+              <option value="2944" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2972" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

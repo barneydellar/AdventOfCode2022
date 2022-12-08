@@ -6,6 +6,17 @@ internal class Program
 {
     private static void Main()
     {
-        Console.WriteLine("Hello World!");
+        var lines = FileReader.Lines("input.txt");
+        
+        var stacks = StackFactory.CreateStacks(lines);
+        var moves = MovementFactory.CreateMoves(lines);
+        var crane = new GiantCargoCrane(stacks, moves);
+        
+        var newStacks = crane.Run();
+
+        foreach (var (index, stack) in newStacks) 
+        {
+            Console.Write(stack.Pop());
+        }
     }
 }
