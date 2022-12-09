@@ -17,8 +17,12 @@ public class GiantCargoCrane
 
         foreach (var move in _moves)
         {
+            var craneStack = new Stack<char>();
             for (var i = 0; i < move.Amount; i++) {
-                newStacks[move.Destination].Push(newStacks[move.Source].Pop());
+                craneStack.Push(newStacks[move.Source].Pop());
+            }
+            for (var i = 0; i < move.Amount; i++) {
+                newStacks[move.Destination].Push(craneStack.Pop());
             }
         }
         

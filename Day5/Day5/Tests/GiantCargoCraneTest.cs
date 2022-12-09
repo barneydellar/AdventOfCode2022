@@ -94,9 +94,9 @@ public class GiantCargoCraneTest
         var newStacks = crane.Run();
         
         newStacks[3].Count.Should().Be(5);
-        newStacks[3].Pop().Should().Be('c');
-        newStacks[3].Pop().Should().Be('d');
         newStacks[3].Pop().Should().Be('e');
+        newStacks[3].Pop().Should().Be('d');
+        newStacks[3].Pop().Should().Be('c');
         newStacks[3].Pop().Should().Be('b');
         newStacks[3].Pop().Should().Be('a');
         newStacks[5].Count.Should().Be(0);
@@ -126,13 +126,12 @@ public class GiantCargoCraneTest
         newStacks[1].Count.Should().Be(1);
         newStacks[2].Count.Should().Be(1);
         newStacks[3].Count.Should().Be(4);
-
-        newStacks[1].Pop().Should().Be('C');
-        newStacks[2].Pop().Should().Be('M');
-        newStacks[3].Pop().Should().Be('Z');
-        newStacks[3].Pop().Should().Be('N');
+    
+        newStacks[1].Pop().Should().Be('M');
+        newStacks[2].Pop().Should().Be('C');
         newStacks[3].Pop().Should().Be('D');
+        newStacks[3].Pop().Should().Be('N');
+        newStacks[3].Pop().Should().Be('Z');
         newStacks[3].Pop().Should().Be('P');
-
     }
 }

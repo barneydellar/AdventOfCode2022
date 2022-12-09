@@ -14,7 +14,7 @@ internal class Program
         
         var newStacks = crane.Run();
 
-        foreach (var (index, stack) in newStacks) 
+        foreach (var (_, stack) in newStacks) 
         {
             Console.Write(stack.Pop());
         }
