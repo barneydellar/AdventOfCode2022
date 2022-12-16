@@ -973,6 +973,16 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
+      },
+      "Tuning/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Tuning.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Tuning.dll": {}
+        }
       }
     }
   },
@@ -3922,6 +3932,11 @@
         "system.xml.xdocument.4.0.11.nupkg.sha512",
         "system.xml.xdocument.nuspec"
       ]
+    },
+    "Tuning/1.0.0": {
+      "type": "project",
+      "path": "../Tuning/Tuning.csproj",
+      "msbuildProject": "../Tuning/Tuning.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -3930,6 +3945,7 @@
       "NUnit >= 3.13.3",
       "NUnit.Analyzers >= 3.3.0",
       "NUnit3TestAdapter >= 4.2.1",
+      "Tuning >= 1.0.0",
       "coverlet.collector >= 3.1.2"
     ]
   },
@@ -3940,11 +3956,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projects\\AdventOfCode2022\\Day6\\TuningTroubleTests\\TuningTroubleTests.csproj",
-      "projectName": "TuningTroubleTests",
-      "projectPath": "C:\\Projects\\AdventOfCode2022\\Day6\\TuningTroubleTests\\TuningTroubleTests.csproj",
+      "projectUniqueName": "C:\\Projects\\AdventOfCode2022\\Day6\\TuningTests\\TuningTests.csproj",
+      "projectName": "TuningTests",
+      "projectPath": "C:\\Projects\\AdventOfCode2022\\Day6\\TuningTests\\TuningTests.csproj",
       "packagesPath": "C:\\Users\\Barnaby.Dellar\\.nuget\\packages\\",
-      "outputPath": "C:\\Projects\\AdventOfCode2022\\Day6\\TuningTroubleTests\\obj\\",
+      "outputPath": "C:\\Projects\\AdventOfCode2022\\Day6\\TuningTests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -3963,7 +3979,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Projects\\AdventOfCode2022\\Day6\\Tuning\\Tuning.csproj": {
+              "projectPath": "C:\\Projects\\AdventOfCode2022\\Day6\\Tuning\\Tuning.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

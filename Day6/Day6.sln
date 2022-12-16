@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TuningTroubleTests", "TuningTroubleTests\TuningTroubleTests.csproj", "{D19B314B-3BB2-49FE-9D1E-9C0D942C049F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TuningTests", "TuningTests\TuningTests.csproj", "{D19B314B-3BB2-49FE-9D1E-9C0D942C049F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tuning", "Tuning\Tuning.csproj", "{959EDFC7-B2A3-4351-BBB1-C61929498B89}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -12,5 +14,9 @@ Global
 		{D19B314B-3BB2-49FE-9D1E-9C0D942C049F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D19B314B-3BB2-49FE-9D1E-9C0D942C049F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D19B314B-3BB2-49FE-9D1E-9C0D942C049F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{959EDFC7-B2A3-4351-BBB1-C61929498B89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{959EDFC7-B2A3-4351-BBB1-C61929498B89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{959EDFC7-B2A3-4351-BBB1-C61929498B89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{959EDFC7-B2A3-4351-BBB1-C61929498B89}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
