@@ -25,5 +25,5 @@ internal static class Test
         "4060174 j\n" +
         "8033020 d.log\n" +
         "5626152 d.ext\n" +
-        "7214296 k\n";
+        "7214296 k";
 }
