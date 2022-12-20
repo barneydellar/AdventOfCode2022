@@ -1,13 +1,13 @@
 ﻿namespace Lib;
 
-public class CommandParser
+public class CommandReader
 {
-    public static IEnumerable<Command> Parse(IEnumerable<string> input)
+    public static IEnumerable<Command> Read(IEnumerable<string> input)
     {
-        return input.Where(L => L.StartsWith("$ ")).Select(Parse);
+        return input.Where(L => L.StartsWith("$ ")).Select(Read);
     }
 
-    private static Command Parse(string s)
+    private static Command Read(string s)
     {
         if (s.Equals("$ ls"))
         {
