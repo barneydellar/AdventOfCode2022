@@ -15,8 +15,17 @@ internal class Program
         var parser = new ContentParser();
         
         parser.Parse(contents);
+
+        const int freeSpace = 70000000;
+        const int totalSpaceNeeded = 30000000;
+        var totalSpaceUsed = parser.Root.Size;
+        var currentFreeSpace = freeSpace - totalSpaceUsed;
+        var spaceNeeded = totalSpaceNeeded - currentFreeSpace;
         
-        var smallDirectories = parser.Directories.Where(d => d.Size < 100000);
-        Console.WriteLine(smallDirectories.Sum(d => d.Size));
+        var smallDirectories = parser.Directories.Where(d => d.Size >= spaceNeeded);
+        
+        var orderedDirectories = smallDirectories.OrderBy(d => d.Size);
+        
+        Console.WriteLine($"{orderedDirectories.First().Name} - {orderedDirectories.First().Size}. ");
     }
 }
