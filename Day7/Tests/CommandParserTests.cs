@@ -16,26 +16,26 @@ public class CommandParserTests
     [Test]
     public void RecognisesLs()
     {
-        CommandParser.Parse(new string[] {"$ ls"}).First().Should().BeOfType<LsCommand>();
+        CommandParser.Parse(new[] {"$ ls"}).First().Should().BeOfType<LsCommand>();
     }
 
     [Test]
     public void RecognisesCd()
     {
-        CommandParser.Parse(new string[] {"$ cd .."}).First().Should().BeAssignableTo(typeof(CdCommand));
+        CommandParser.Parse(new[] {"$ cd .."}).First().Should().BeAssignableTo(typeof(CdCommand));
     }
 
     [Test]
     public void RecognisesCdDirections()
     {
-        CommandParser.Parse(new string[] {"$ cd .."}).First().Should().BeOfType<CdUpCommand>();
-        CommandParser.Parse(new string[] {"$ cd a"}).First().Should().BeOfType<CdDownCommand>();
-        CommandParser.Parse(new string[] {"$ cd /"}).First().Should().BeOfType<CdTopCommand>();
+        CommandParser.Parse(new[] {"$ cd .."}).First().Should().BeOfType<CdUpCommand>();
+        CommandParser.Parse(new[] {"$ cd a"}).First().Should().BeOfType<CdDownCommand>();
+        CommandParser.Parse(new[] {"$ cd /"}).First().Should().BeOfType<CdTopCommand>();
     }
 
     [Test]
     public void CdDownHasAName()
     {
-        (CommandParser.Parse(new string[] {"$ cd subfolder"}).First() as CdDownCommand).Folder.Should().Be("subfolder");
+        (CommandParser.Parse(new[] {"$ cd subfolder"}).First() as CdDownCommand)?.Folder.Should().Be("subfolder");
     }
 }
