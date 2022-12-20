@@ -1,14 +1,14 @@
 ﻿namespace Lib;
 
-public class FileContent : Content
+public class File
 {
-    public FileContent(int size, string name)
+
+    public File(int size, string name)
     {
-        Size = size;;
+        Size = size;
         Name = name;
     }
 
     public string Name { get; }
-
     public int Size { get; }
 }

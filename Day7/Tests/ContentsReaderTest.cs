@@ -26,6 +26,12 @@ public class ContentsReaderTest
     }
     
     [Test]
+    public void DirectoriesHaveNames()
+    {
+        (ContentsReader.Read(new[] {"dir f"}).First() as DirectoryContent).Name.Should().Be("f");
+    }
+    
+    [Test]
     public void FilesHaveASize()
     {
         (ContentsReader.Read(new[] {"29116 f"}).First() as FileContent)?.Size.Should().Be(29116);
@@ -41,7 +47,7 @@ public class ContentsReaderTest
     [Test]
     public void RecognisesCd()
     {
-        ContentsReader.Read(new[] {"$ cd .."}).First().Should().BeAssignableTo(typeof(CdCommand));
+        ContentsReader.Read(new[] {"$ cd .."}).First().Should().BeAssignableTo(typeof(CdUpCommand));
     }
 
     [Test]

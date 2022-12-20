@@ -22,14 +22,15 @@ public class ContentsReader
             {
                 return new CdTopCommand();
             }
-            return new CdDownCommand(s);
+            return new CdDownCommand(s[5..]);
         }
         
         if (s.StartsWith("dir "))
         {
-            return new DirectoryContent();
+            return new DirectoryContent(s[4..]);
         }
 
-        return new FileContent(s);
+        var fileNameAndSize = s.Split(" ");
+        return new FileContent(int.Parse(fileNameAndSize.First()), fileNameAndSize.Last());
     }
 }

@@ -2,9 +2,9 @@
 
 public class CdDownCommand : Content
 {
-    public CdDownCommand(string command)
+    public CdDownCommand(string folder)
     {
-        Folder = command[5..];
+        Folder = folder;
     }
     public string Folder { get; }
 }
