@@ -1,5 +1,5 @@
 ﻿namespace Lib;
 
-public class CdCommand : Command
+public class CdCommand : Content
 {
 }

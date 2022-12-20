@@ -5,12 +5,12 @@ namespace Tests;
 
 public class ContentsReaderTest
 {
-    private readonly string[] input = LineBreaker.Break(Test.Input);
     
     [Test]
     public void ContentsCanBeFound()
     {
-        ContentsReader.Read(input).Count().Should().Be(13);
+        var input = LineBreaker.Break(Test.Input);
+        ContentsReader.Read(input).Count().Should().Be(23);
     }
     
     [Test]
@@ -30,5 +30,31 @@ public class ContentsReaderTest
     {
         (ContentsReader.Read(new[] {"29116 f"}).First() as FileContent)?.Size.Should().Be(29116);
         (ContentsReader.Read(new[] {"3 log.log"}).First() as FileContent)?.Size.Should().Be(3);
+    }
+
+    [Test]
+    public void RecognisesLs()
+    {
+        ContentsReader.Read(new[] {"$ ls"}).First().Should().BeOfType<LsCommand>();
+    }
+
+    [Test]
+    public void RecognisesCd()
+    {
+        ContentsReader.Read(new[] {"$ cd .."}).First().Should().BeAssignableTo(typeof(CdCommand));
+    }
+
+    [Test]
+    public void RecognisesCdDirections()
+    {
+        ContentsReader.Read(new[] {"$ cd .."}).First().Should().BeOfType<CdUpCommand>();
+        ContentsReader.Read(new[] {"$ cd a"}).First().Should().BeOfType<CdDownCommand>();
+        ContentsReader.Read(new[] {"$ cd /"}).First().Should().BeOfType<CdTopCommand>();
+    }
+
+    [Test]
+    public void CdDownHasAName()
+    {
+        (ContentsReader.Read(new[] {"$ cd subfolder"}).First() as CdDownCommand)?.Folder.Should().Be("subfolder");
     }
 }

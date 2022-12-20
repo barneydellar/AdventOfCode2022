@@ -1,6 +1,6 @@
 ﻿namespace Lib;
 
-public class CdDownCommand : Command
+public class CdDownCommand : Content
 {
     public CdDownCommand(string command)
     {
